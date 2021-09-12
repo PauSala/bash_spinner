@@ -1,6 +1,8 @@
 # spinner.sh
 Simple spinner for bash scripts
 
+![](https://raw.githubusercontent.com/PauSala/bash_spinner/master/sample.gif)  
+
 ## Usage
 ./spinner.sh [ -p title_color ] [ -s spinner_color ] [ -t tick_color ] [ -r quoted_spinner_string ] PID [ action_title ]
 

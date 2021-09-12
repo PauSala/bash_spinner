@@ -51,7 +51,7 @@ check_valid_color() {
     if [[ ${COLORS[$1]} ]]; 
     then true
     else exit_abnormal 
-    fi    # Exists
+    fi
 }
 
 #Get user options

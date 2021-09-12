@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Spinner for bash 
-# [Some command] ./spinner.sh "$!" [command description]
 
 #COLORS
 declare -A COLORS=( 
@@ -26,7 +25,6 @@ declare -A COLORS=(
 PRIMARYC="${COLORS[yellow]}"
 SECONDARYC="${COLORS[cyan]}"
 TICKC="${COLORS[green]}"
-#sp="▵▹▿◃" sp="△▷▽◁" sp="·:⁖⁘⁙⁘⁖:" sp="⬖⬗⬘⬙"
 SPINNER="⋮⋰⋯⋱"
 
 # Function: Print a help message.

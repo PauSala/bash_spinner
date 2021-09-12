@@ -9,7 +9,7 @@ Can take 4 optional parameters to configure the title_color, the spinner_color, 
 -  "▵▹▿◃"  
 -  "△▷▽◁"   
 -  "·:⁖⁘⁙⁘⁖:"   
--  "⬖⬗⬘⬙"  
+-  "⬖⬘⬗⬙"  
 -  "⋮⋰⋯⋱"  
 
 ## Examples

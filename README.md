@@ -1,4 +1,4 @@
-# bash_spinner
+# spinner.sh
 Simple spinner for bash scripts
 
 ## Usage
@@ -19,7 +19,7 @@ Can take 4 optional parameters to configure the title_color, the spinner_color, 
 -  sleep 2 & ./spinner.sh -p green -s blue -t lpurple -r "△▷▽◁" "$!" "Action 4"  
 
 ## Avaliable colors
-[black, red, green, orange, blue, purple, cyan, lgray, dgray, lred, lgreen, yellow, lblue, lpurple, lcyan and white]
+[    black, red, green, orange, blue, purple, cyan, lgray, dgray, lred, lgreen, yellow, lblue, lpurple, lcyan and white   ]
 
 They are mapped to bash [colors.](https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html) 
 

@@ -74,9 +74,10 @@ if ! [[ $PID ]]; then exit_abnormal; fi
 trap show_cursor INT TERM
 hide_cursor
 
+i=1;
 while [ -d /proc/$PID ]
 do
-    for ( i=1; i<=${#SPINNER}; i++ ); 
+	for (( j=0; j<${#SPINNER}; j++ )); 
         do
             echo -ne "${PRIMARYC}$TITLE ${SECONDARYC}${SPINNER:i++%${#SPINNER}:1}" "\r"; 
             sleep .1;

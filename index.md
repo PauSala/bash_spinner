@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+# spinner.sh
+Simple spinner for bash scripts
 
-You can use the [editor on GitHub](https://github.com/PauSala/bash_spinner/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![](https://raw.githubusercontent.com/PauSala/bash_spinner/master/sample.gif)  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Usage
+./spinner.sh [ -p title_color ] [ -s spinner_color ] [ -t tick_color ] [ -r spinner_string ] PID [ action_title ]
 
-### Markdown
+### Some cool spinners:  
+-  "▵▹▿◃"  
+-  "△▷▽◁"   
+-  "·:⁖⁘⁙⁘⁖:"   
+-  "⬖⬘⬗⬙"  
+-  "⋮⋰⋯⋱"  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Examples
+-  sleep 2 & ./spinner.sh "$!" "Action 1"  
+-  sleep 2 & ./spinner.sh -p green -s blue "$!" "Action 2"   
+-  sleep 2 & ./spinner.sh -p green -s blue -t lpurple "$!" "Action 3"  
+-  sleep 2 & ./spinner.sh -p green -s blue -t lpurple -r "△▷▽◁" "$!" "Action 4"  
 
-```markdown
-Syntax highlighted code block
+## Avaliable colors
+black, red, green, orange, blue, purple, cyan, lgray, dgray, lred, lgreen, yellow, lblue, lpurple, lcyan, white
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PauSala/bash_spinner/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+They are mapped to bash [colors.](https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html) 
